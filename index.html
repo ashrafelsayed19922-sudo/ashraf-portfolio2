@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ashraf El Sayed — Graphic Designer</title>
+<meta name="description" content="Ashraf El Sayed — Graphic Designer Portfolio">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#08090d;--card:#101218;--line:#20232c;--muted:#9ca1ad;--text:#f7f7f9;--accent:#8b5cf6;--accent2:#c4b5fd}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Cairo,Arial,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 75% 8%,#8b5cf61b,transparent 25%),radial-gradient(circle at 15% 35%,#4f46e50e,transparent 28%);z-index:-1}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:19px;font-weight:900;letter-spacing:.3px}.logo i{color:var(--accent);font-style:normal}
+.links{display:flex;gap:28px;color:#b9bdc7;font-size:14px}.links a{transition:.2s}.links a:hover{color:white}
+.hero{min-height:calc(100vh - 78px);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:65px;padding:70px 0}
+.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--accent2);font-size:14px;font-weight:700;margin-bottom:22px}.dot{width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 18px var(--accent)}
+h1{font-size:clamp(48px,6.4vw,78px);line-height:1.08;letter-spacing:-2.5px;margin-bottom:25px}h1 span{color:var(--accent2)}
+.hero p{font-size:17px;line-height:2;color:var(--muted);max-width:650px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 22px;border-radius:11px;border:1px solid #30333d;font-weight:700;font-size:14px;transition:.25s}.btn:hover{transform:translateY(-3px)}.primary{background:var(--accent);border-color:var(--accent);color:white}.ghost{background:#ffffff05}
+.art{position:relative;height:470px;border:1px solid #2a2d38;border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#15101f,#0d0f15);box-shadow:0 35px 90px #0009}
+.art:after{content:"";position:absolute;width:270px;height:270px;border-radius:50%;background:#8b5cf625;filter:blur(35px);top:65px;left:50px}
+.poster{position:absolute;width:275px;height:350px;right:60px;top:52px;border-radius:18px;background:linear-gradient(150deg,#bba8ff 0%,#6d4bc4 42%,#14151d 43%);transform:rotate(6deg);padding:24px;z-index:2;box-shadow:0 25px 50px #0009}.poster small{font-size:10px;color:#211934}.poster strong{display:block;font-size:34px;line-height:1.05;margin-top:125px;color:#fff}.poster em{font-style:normal;font-size:12px;color:#e8e2ff}
+.float{position:absolute;z-index:3;background:#11141b;border:1px solid #303440;border-radius:14px;padding:15px 18px;box-shadow:0 20px 45px #0009}.f1{left:30px;bottom:55px}.f2{right:25px;bottom:25px}.float b{display:block;font-size:14px}.float small{color:#9297a3;font-size:10px}
+section{padding:100px 0;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:38px}.head h2{font-size:38px}.head p{color:var(--muted);max-width:520px;font-size:14px;line-height:1.9}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:linear-gradient(180deg,#11131a,#0d0f14);border:1px solid var(--line);padding:30px;border-radius:18px;transition:.25s}.service:hover{border-color:#4c3c76;transform:translateY(-5px)}.num{color:var(--accent2);font-weight:900;font-size:13px}.service h3{font-size:20px;margin:30px 0 10px}.service p{color:var(--muted);font-size:13px;line-height:2}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{height:290px;border:1px solid var(--line);border-radius:20px;overflow:hidden;position:relative;background:#15171e}.project .visual{position:absolute;inset:0;transition:.5s}.project:hover .visual{transform:scale(1.05)}.v1{background:radial-gradient(circle at 30% 25%,#d6c9ff,transparent 20%),linear-gradient(135deg,#2b174f,#8b5cf6 48%,#171923)}.v2{background:radial-gradient(circle at 70% 25%,#ffd9a8,transparent 18%),linear-gradient(135deg,#17323b,#b97848 55%,#15171d)}.v3{background:radial-gradient(circle at 35% 30%,#ffb3cc,transparent 20%),linear-gradient(135deg,#4a152d,#e66a9b 55%,#16151b)}.project .caption{position:absolute;inset:auto 0 0;padding:45px 20px 20px;background:linear-gradient(transparent,#08090df2)}.caption b{font-size:17px}.caption small{display:block;color:#b3b7c2;margin-top:3px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.about-card{border:1px solid var(--line);border-radius:24px;padding:35px;background:linear-gradient(145deg,#171321,#0d0f14)}.about-card .big{font-size:75px;font-weight:900;color:var(--accent);line-height:1}.about h2{font-size:40px;margin-bottom:16px}.about p{color:var(--muted);line-height:2;font-size:15px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.stat{border:1px solid var(--line);padding:17px;border-radius:14px}.stat b{font-size:24px}.stat small{display:block;color:#888e9a;font-size:11px}
+.cta{text-align:center;padding:110px 20px}.cta h2{font-size:clamp(35px,5vw,58px);line-height:1.2}.cta p{color:var(--muted);margin:15px auto 28px;max-width:600px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#777d88;font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:850px){.links{display:none}.hero,.about{grid-template-columns:1fr}.hero{padding:60px 0}.art{height:400px}.services,.work{grid-template-columns:1fr}.head{display:block}.head p{margin-top:10px}.about-card{max-width:500px}.stats{grid-template-columns:repeat(3,1fr)}} 
+@media(max-width:500px){.container{width:min(100% - 28px,1120px)}h1{font-size:47px}.art{height:350px}.poster{width:220px;height:285px;right:35px;top:40px}.poster strong{font-size:27px;margin-top:100px}.f1{left:15px}.f2{right:12px}.stats{gap:6px}.stat{padding:12px}.stat b{font-size:20px}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav><a class="logo" href="#">Ashraf El Sayed<span><i>.</i></span></a><div class="links"><a href="#services">الخدمات</a><a href="#work">أعمالي</a><a href="#about">عني</a><a href="#contact">تواصل</a><a href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener">Behance ↗</a></div></nav></div></header>
+<main>
+<div class="container">
+<section class="hero" style="border:0">
+<div>
+<div class="kicker"><span class="dot"></span> Graphic Designer · Available for projects</div>
+<h1>أصمم الفكرة<br><span>قبل ما أصمم الشكل.</span></h1>
+<p>مصمم جرافيك متخصص في تحويل الأفكار إلى تصاميم واضحة، جذابة، ومبنية على هدف حقيقي — من الهوية البصرية والسوشيال ميديا إلى المطبوعات والمواد التسويقية.</p>
+<div class="actions"><a class="btn primary" href="#contact">ابدأ مشروعك ←</a><a class="btn ghost" href="#work">شاهد أعمالي</a></div>
+</div>
+<div class="art"><div class="poster"><small>ASHRAF EL SAYED / DESIGN</small><strong>MAKE<br>IT<br>MEMORABLE.</strong><em>Visual identity · 2026</em></div><div class="float f1"><b>8+ Years</b><small>Design experience</small></div><div class="float f2"><b>Ideas → Visuals</b><small>Design with purpose</small></div></div>
+</section>
+</div>
+
+<section id="services"><div class="container"><div class="head"><h2>إيه اللي بقدمه؟</h2><p>من أول الفكرة لحد الملف النهائي — كل تفصيلة في التصميم لها سبب وهدف.</p></div><div class="services">
+<article class="service"><span class="num">01 / BRANDING</span><h3>الهوية البصرية</h3><p>هوية متكاملة تساعد البراند يظهر بشخصية واضحة ومميزة وقابلة للتذكر.</p></article>
+<article class="service"><span class="num">02 / SOCIAL</span><h3>سوشيال ميديا</h3><p>تصميمات ومنشورات وإعلانات توقف الـ Scroll وتوصل الرسالة بسرعة.</p></article>
+<article class="service"><span class="num">03 / PRINT</span><h3>المطبوعات والتسويق</h3><p>أغلفة، شهادات، بروشورات، بنرات ومواد تسويقية جاهزة للطباعة والنشر.</p></article>
+</div></div></section>
+
+<section id="work"><div class="container"><div class="head"><h2>أعمالي على Behance</h2><p>مجموعة من مشاريعي المنشورة على Behance — اضغط على أي مشروع لمشاهدة أعمالي بالتفصيل.</p></div><div class="work"><a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v1"></div><div class="caption"><b>تصميم منيو وفلاير مطعم</b><small>مطاعم • Menu & Flyer</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v2"></div><div class="caption"><b>تصميم يفطة</b><small>Outdoor Advertising</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v3"></div><div class="caption"><b>برجر آرت | مجموعة بوسترات إعلانية</b><small>Advertising Posters</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v1"></div><div class="caption"><b>غلاف مذكرة</b><small>Cover Design</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v2"></div><div class="caption"><b>تصميم أوراق مذكرة داخلية</b><small>Editorial Design</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v3"></div><div class="caption"><b>بوسترات مطعم Fish 54</b><small>Restaurant Posters</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v1"></div><div class="caption"><b>تصميم بوستر مدرس كيمياء</b><small>Educational Design</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v2"></div><div class="caption"><b>تصميم بوستر لصالون بليونير</b><small>Beauty & Advertising</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v3"></div><div class="caption"><b>Drinks Sota | Motion Advertising for Fresh Juices</b><small>Motion Advertising</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v1"></div><div class="caption"><b>تصميم نوت بوك</b><small>Notebook Design</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v2"></div><div class="caption"><b>تصميم بوسترات مدرس لغة عربية</b><small>Educational Posters</small></div></a>
+<a class="project" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener"><div class="visual v3"></div><div class="caption"><b>براند مطعم</b><small>Restaurant Branding</small></div></a></div><div style="text-align:center;margin-top:32px"><a class="btn ghost" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener">شاهد كل مشاريعي على Behance ↗</a></div></div></section>
+
+<section id="about"><div class="container about"><div class="about-card"><div class="big">8+</div><p style="margin-top:8px">سنوات من تحويل الأفكار إلى تصميمات بصرية.</p><div class="stats"><div class="stat"><b>3+</b><small>مجالات تصميم</small></div><div class="stat"><b>∞</b><small>أفكار قابلة للتطوير</small></div><div class="stat"><b>1:1</b><small>اهتمام بكل مشروع</small></div></div></div><div><h2>التصميم مش مجرد شكل.</h2><p>بالنسبة لي، التصميم الجيد يبدأ بفهم المشكلة والجمهور والهدف. بعدها يأتي اللون والخط والصورة كأدوات تساعد الفكرة إنها توصل بالشكل الصح.</p><p style="margin-top:15px">هدفي إن التصميم اللي تستلمه يكون مش بس شكله احترافي، لكن يكون له وظيفة ويترك انطباعًا حقيقيًا.</p></div></div></section>
+
+<section id="contact" class="cta"><h2>عندك فكرة تستاهل تتشاف؟</h2><p>احكيلي عنها، ونحوّلها مع بعض لتصميم يخلي الناس توقف وتنتبه.</p><a class="btn primary" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener">تواصل معي على واتساب ←</a></section>
+</main>
+<footer><div class="container" style="display:flex;justify-content:space-between"><span>© 2026 Ashraf El Sayed</span><span>Graphic Designer</span></div></footer>
+<a class="wa" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener" aria-label="WhatsApp">☏ <span>واتساب</span></a>
+<style>.wa{position:fixed;left:22px;bottom:22px;z-index:99;background:#25d366;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;font-size:14px;box-shadow:0 12px 30px #0008;display:flex;gap:8px;align-items:center}.wa:hover{transform:translateY(-3px)}@media(max-width:500px){.wa{left:14px;bottom:14px;padding:10px 14px}}</style>
+</body></html>
