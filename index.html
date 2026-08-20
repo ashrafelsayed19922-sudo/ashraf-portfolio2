@@ -1,3 +1,121 @@
+Replit
+
+أيوه، فهمت قصدك. شوفت الصفحة اللي بعتها، وأقدر أعمل لك Landing Page بنفس مستوى وشكل العرض تقريبًا لكن مخصصة لك كمصمم جرافيك.
+
+بس إنشاء المشروع مباشرة على Replit عندي متوقف حاليًا لأن حساب Replit يحتاج اشتراكًا نشطًا لهذه العملية.
+
+لو تحب، أقدر أعملهولك هنا كصفحة كاملة جاهزة وتاخدها وترفعها على Replit، أو نمشي خطوة خطوة ونبنيها على مشروعك الحالي.
+
+في مربع علي الشمال في الموقع فوق مكتوب make it memorable
+تضيف الصورة دي جواه
+
+تمام. أنا جهزت النسخة النهائية بكل التعديلات، لكن فيه مشكلة واحدة: صلاحية GitHub عندي ما زالت بترجع 403 وقت الكتابة، لذلك مقدرتش أرفعها بنفسي على الـRepository.
+
+جهزتلك الملف كاملًا بحيث ترفعه على نفس مشروع GitHub، ونفس رابط Cloudflare يفضل كما هو.
+
+تحميل النسخة النهائية للموقع
+
+الموجود فيها:
+العنوان الجديد: أبني حضورك البصري من الفكرة حتى أدق تفاصيلها.
+أيقونات Facebook / LinkedIn / Instagram / Pinterest / Email بالأعلى.
+زر العربية / English.
+قسم عن أشرف السيد بنبذة احترافية مناسبة للـSEO.
+رقم Vodafone Cash: 01064363573 + زر نسخ الرقم.
+الصورة اللي بعتها داخل مربع Make It Memorable.
+مشاريع Behance الموجودة حاليًا.
+محاولة تحديث مشاريع Behance تلقائيًا عند فتح الموقع.
+زر واتساب الموجود عندك.
+تحسين الـSEO.
+عشان تفضل على نفس الرابط:
+
+بعد فك الضغط، هتلاقي:
+
+index.html
+assets/
+   ashraf.jpg
+
+ارفع الاثنين داخل Repository ashraf-portfolio2، بحيث الصورة تكون:
+
+assets/ashraf.jpg
+
+وبعدها اعمل Commit changes.
+
+بما إن Cloudflare مربوط بالـGitHub، المفروض يعمل Deploy تلقائي، ورابطك الحالي نفسه يفضل هو:
+
+ashraf-portfolio2.ashrafelsayed19922.workers.dev
+
+ومش هيتعمل رابط جديد كل مرة.
+
+Pasted text.txt
+Document
+
+بالظبط، خلينا نمشي واحدة واحدة:
+
+1. في index.html اضغط Ctrl + F
+
+وابحث عن:
+
+أنا أشرف السيد
+
+هتلاقي الجزء اللي فيه تعريفك، وتحته كلام عن خبرتك.
+
+قبل السطر اللي فيه <h2>أنا أشرف السيد. مباشرة، هتلاقي بداية القسم بتكون غالبًا:
+
+<section id="about">
+2. لو لقيت:
+<section id="about">
+<div class="container">
+
+سيبها زي ما هي.
+
+المشكلة عندك إن قسم "التصميم مش مجرد شكل" واخد id="about" بدل قسم أشرف.
+
+إذن اعمل حاجة واحدة فقط الآن:
+
+ابحث عن:
+
+<section id="about">
+
+اللي فوق "التصميم مش مجرد شكل."
+
+وغيّرها إلى:
+
+<section id="design">
+
+ما تضيفش section id="about" في أي مكان لسه.
+
+بعد ما تعمل التغيير ده، قولي لقيت "أنا أشرف السيد" وأنا أقولك السطر بالضبط اللي تحطه قبله.
+
+Today 11:03 PM
+<title>Ashraf El Sayed — Graphic Designer</title>
+<meta name="description" content="<h2>أنا أشرف السيد — Graphic Designer</h2>
+
+آه، قف هنا. أنت لقيت المكان، لكن اللي ظهر لك معناه إن تعريفك اتحط جوه meta description بالغلط. ❌
+
+عندك الآن:
+
+<title>Ashraf El Sayed — Graphic Designer</title>
+<meta name="description" content="<h2>أنا أشرف السيد — Graphic Designer</h2>
+
+وده غلط.
+
+اعمل الآتي بالضبط:
+
+خلي السطرين دول:
+
+<title>Ashraf El Sayed — Graphic Designer</title>
+<meta name="description" content="أشرف السيد مصمم جرافيك بخبرة تتجاوز 8 سنوات في الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والتصميم التسويقي.">
+
+ومتكتبش <h2> هنا نهائيًا.
+
+بعد كده ما تعدلش حاجة تانية في الجزء ده.
+
+المشكلة إننا كنا بندور على مكان قسم "أنا أشرف السيد"، لكن البحث أخدنا إلى meta description لأن نفس النص موجود هناك.
+
+اعمل التعديل ده فقط، وما تعملش Commit لسه. وبعدها ابعتلي السطور اللي بعدها مباشرة من <style> وأنا أوصلك للمكان الصحيح خطوة بخطوة.
+
+Today 11:05 PM
+برضو بايظ
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
@@ -76,4 +194,170 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:#777d88;font-size:1
 <script>const cash="01064363573";document.getElementById("payBtn")?.addEventListener("click",()=>document.getElementById("payment")?.scrollIntoView({behavior:"smooth"}));document.getElementById("copyCash")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(cash);document.getElementById("copyCash").textContent="تم نسخ الرقم ✓"}catch(e){alert(cash)}});const ar={"الخدمات":"Services","أعمالي":"Work","عني":"About","تواصل":"Contact","ابدأ مشروعك ←":"Start a project →","شاهد أعمالي":"View my work","إيه اللي بقدمه؟":"What I offer","أعمالي على Behance":"My Behance work","التصميم مش مجرد شكل.":"Design is more than looks.","عندك فكرة تستاهل تتشاف؟":"Have an idea worth seeing?"};document.getElementById("langBtn")?.addEventListener("click",()=>{const b=document.body;const en=b.dataset.en!=="1";b.dataset.en=en?"1":"0";document.documentElement.lang=en?"en":"ar";document.documentElement.dir=en?"ltr":"rtl";document.getElementById("langBtn").textContent=en?"العربية":"English";document.querySelectorAll("[data-ar]").forEach(el=>el.textContent=en?(ar[el.dataset.ar]||el.textContent):el.dataset.ar)});document.querySelectorAll(".links a,.actions a,.head h2,.cta h2").forEach(el=>{if(ar[el.textContent.trim()])el.dataset.ar=el.textContent.trim()});</script><style>.wa{position:fixed;left:22px;bottom:22px;z-index:99;background:#25d366;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;font-size:14px;box-shadow:0 12px 30px #0008;display:flex;gap:8px;align-items:center}.wa:hover{transform:translateY(-3px)}@media(max-width:500px){.wa{left:14px;bottom:14px;padding:10px 14px}}#about{
   scroll-margin-top:90px;
 }</style>
-<script id="behance-auto-sync">(async()=>{try{const api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://rsshub.app/behance/ashrafelsa213e/projects');const r=await fetch(api,{cache:'no-store'});const j=await r.json();if(!j.items?.length)return;const grid=document.querySelector('.bh-grid');if(!grid)return;const cards=j.items.slice(0,30).map((x,i)=>{const m=x.link.match(/gallery\/(\d+)/);if(!m)return '';const t=(x.title||`Behance Project ${i+1}`).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));const u=x.link.replace(/"/g,'%22');return `<article class="bh-card"><a href="${u}" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/${m[1]}" title="${t}" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>${t}</b><span>Behance Project</span></div></article>`}).join('');if(cards)grid.innerHTML=cards}catch(e){console.log('Behance auto-sync unavailable; keeping current projects.')}})();</script></body></html>
+<script id="behance-auto-sync">(async()=>{try{const api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://rsshub.app/behance/ashrafelsa213e/projects');const r=await fetch(api,{cache:'no-store'});const j=await r.json();if(!j.items?.length)return;const grid=document.querySelector('.bh-grid');if(!grid)return;const cards=j.items.slice(0,30).map((x,i)=>{const m=x.link.match(/gallery\/(\d+)/);if(!m)return '';const t=(x.title||Behance Project ${i+1}).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));const u=x.link.replace(/"/g,'%22');return <article class="bh-card"><a href="${u}" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/${m[1]}" title="${t}" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>${t}</b><span>Behance Project</span></div></article>}).join('');if(cards)grid.innerHTML=cards}catch(e){console.log('Behance auto-sync unavailable; keeping current projects.')}})();</script></body></html>
+خد انت الملف وعدل انت وابعته
+Analysis errored
+from pathlib import Path
+<div class="container">
+<section class="hero" style="border:0">
+<div>
+<div class="kicker"><span class="dot"></span> Graphic Designer · Available for projects</div>
+<h1>أبني حضورك البصري<br><span>من الفكرة حتى أدق تفاصيلها.</span></h1>
+<p>مصمم جرافيك متخصص في تحويل الأفكار إلى تصاميم واضحة، جذابة، ومبنية على هدف حقيقي — من الهوية البصرية والسوشيال ميديا إلى المطبوعات والمواد التسويقية.</p>
+<div class="actions"><a class="btn primary" href="#contact">ابدأ مشروعك ←</a><a class="btn ghost" href="#work">شاهد أعمالي</a></div>
+</div>
+<div class="art"><img class="portrait" src="صورة لوحدها.jpg" alt="أشرف السيد - مصمم جرافيك"><div class="portrait-overlay"></div><div class="portrait-label">Ashraf El Sayed · Graphic Designer</div><div class="float f1"><b>8+ Years</b><small>Design experience</small></div><div class="float f2"><b>Ideas → Visuals</b><small>Design with purpose</small></div></div>
+</section>
+</div>
+
+
+<section id="services"><div class="container"><div class="head"><h2>إيه اللي بقدمه؟</h2><p>من أول الفكرة لحد الملف النهائي — كل تفصيلة في التصميم لها سبب وهدف.</p></div><div class="services">
+<article class="service"><span class="num">01 / BRANDING</span><h3>الهوية البصرية</h3><p>هوية متكاملة تساعد البراند يظهر بشخصية واضحة ومميزة وقابلة للتذكر.</p></article>
+<article class="service"><span class="num">02 / SOCIAL</span><h3>سوشيال ميديا</h3><p>تصميمات ومنشورات وإعلانات توقف الـ Scroll وتوصل الرسالة بسرعة.</p></article>
+<article class="service"><span class="num">03 / PRINT</span><h3>المطبوعات والتسويق</h3><p>أغلفة، شهادات، بروشورات، بنرات ومواد تسويقية جاهزة للطباعة والنشر.</p></article>
+</div></div></section>
+
+
+<section id="work"><div class="container"><div class="head"><h2>أعمالي على Behance</h2><p>كل مشاريعي من Behance في مكان واحد. اضغط على أي مشروع لمشاهدته بالتفصيل.</p></div><div class="bh-grid">
+''' + ''.join(
+f'<article class="bh-card"><a href="{u}" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/{pid}" title="{title}" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>{title}</b><span>Behance Project</span></div></article>'
+for pid,u,title in [
+("253623405","https://www.behance.net/gallery/253623405/_","Graphic Design Project 01"),
+("252509447","https://www.behance.net/gallery/252509447/-2027","2027 Design Project"),
+("253146017","https://www.behance.net/gallery/253146017/Print-Design-for-Water-Company","Print Design for Water Company"),
+("252932691","https://www.behance.net/gallery/252932691/Large-Format-Sticker-Design","Large Format Sticker Design"),
+("252653043","https://www.behance.net/gallery/252653043/Coffee-Brand-Identity","Coffee Brand Identity"),
+("252070315","https://www.behance.net/gallery/252070315/_","Graphic Design Project 06"),
+("251540863","https://www.behance.net/gallery/251540863/_","Graphic Design Project 07"),
+("252646567","https://www.behance.net/gallery/252646567/Sharqia-Water-Company","Sharqia Water Company"),
+("251040109","https://www.behance.net/gallery/251040109/_","Graphic Design Project 09"),
+("250680923","https://www.behance.net/gallery/250680923/_","Graphic Design Project 10"),
+("250746511","https://www.behance.net/gallery/250746511/_","Graphic Design Project 11"),
+("250631935","https://www.behance.net/gallery/250631935/_","Graphic Design Project 12"),
+("250550599","https://www.behance.net/gallery/250550599/-fish-54","Fish 54"),
+("250514851","https://www.behance.net/gallery/250514851/_","Graphic Design Project 14"),
+("250322001","https://www.behance.net/gallery/250322001/Drinks-Sota-Motion-Advertising-for-Fresh-Juices","Drinks Sota — Motion Advertising"),
+("250300547","https://www.behance.net/gallery/250300547/_","Graphic Design Project 16"),
+("249836547","https://www.behance.net/gallery/249836547/_","Graphic Design Project 17"),
+("249512169","https://www.behance.net/gallery/249512169/-()","Graphic Design Project 18"),
+("249511755","https://www.behance.net/gallery/249511755/_","Graphic Design Project 19"),
+("249511807","https://www.behance.net/gallery/249511807/_","Graphic Design Project 20"),
+("223339891","https://www.behance.net/gallery/223339891/roll-up","Roll Up Design"),
+("223339823","https://www.behance.net/gallery/223339823/business-card","Business Card Design"),
+("249511573","https://www.behance.net/gallery/249511573/_","Graphic Design Project 23"),
+("223339657","https://www.behance.net/gallery/223339657/menu","Menu Design"),
+("223339559","https://www.behance.net/gallery/223339559/design-banner","Banner Design"),
+("223339431","https://www.behance.net/gallery/223339431/design-sticker","Sticker Design"),
+("223339349","https://www.behance.net/gallery/223339349/design-banner","Banner Design"),
+]):
+html += '''</div><div style="text-align:center;margin-top:35px"><a class="btn primary" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener">شاهد كل أعمالي على Behance ↗</a></div></div></section>
+
+
+<section id="about"><div class="container about"><div class="about-card"><div class="big">8+</div><p style="margin-top:8px">سنوات من تحويل الأفكار إلى تصميمات بصرية.</p><div class="stats"><div class="stat"><b>3+</b><small>مجالات تصميم</small></div><div class="stat"><b>∞</b><small>أفكار قابلة للتطوير</small></div><div class="stat"><b>1:1</b><small>اهتمام بكل مشروع</small></div></div></div><div><h2>أنا أشرف السيد — مصمم جرافيك.</h2><p class="about-intro">مصمم جرافيك بخبرة تتجاوز 8 سنوات في مجال التصميم وصناعة المحتوى البصري. أساعد الشركات والأفراد على تحويل أفكارهم إلى تصاميم واضحة واحترافية تخدم أهدافهم وتترك انطباعًا قويًا.</p><p>أعمل على تصميم الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والمواد التسويقية، مع اهتمام بالتفاصيل وجودة التنفيذ من الفكرة الأولى وحتى الملف النهائي.</p></div></div></section>
+
+
+<section id="contact" class="cta"><h2>عندك فكرة تستاهل تتشاف؟</h2><p>احكيلي عنها، ونحوّلها مع بعض لتصميم يخلي الناس توقف وتنتبه.</p><a class="btn primary" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener">تواصل معي على واتساب ←</a></section>
+<section id="payment" class="cta" style="padding-top:55px;padding-bottom:55px"><h2 style="font-size:32px">الدفع عبر فودافون كاش</h2><p>للدفع مقابل خدمات التصميم: <strong style="color:#fff">01064363573</strong></p><button class="btn primary" id="copyCash">نسخ رقم فودافون كاش</button></section>
+</main>
+<footer><div class="container" style="display:flex;justify-content:space-between"><span>© 2026 Ashraf El Sayed</span><span>Graphic Designer</span></div></footer>
+<a class="wa" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener" aria-label="WhatsApp">☏ <span>واتساب</span></a>
+<script>
+const cash="01064363573";
+document.getElementById("payBtn")?.addEventListener("click",()=>document.getElementById("payment")?.scrollIntoView({behavior:"smooth"}));
+document.getElementById("copyCash")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(cash);document.getElementById("copyCash").textContent="تم نسخ الرقم ✓"}catch(e){alert(cash)}});
+const ar={"الخدمات":"Services","أعمالي":"Work","عني":"About","تواصل":"Contact","ابدأ مشروعك ←":"Start a project →","شاهد أعمالي":"View my work","إيه اللي بقدمه؟":"What I offer","أعمالي على Behance":"My Behance work","التصميم مش مجرد شكل.":"Design is more than looks.","عندك فكرة تستاهل تتشاف؟":"Have an idea worth seeing?"};
+document.getElementById("langBtn")?.addEventListener("click",()=>{const b=document.body;const en=b.dataset.en!=="1";b.dataset.en=en?"1":"0";document.documentElement.lang=en?"en":"ar";document.documentElement.dir=en?"ltr":"rtl";document.getElementById("langBtn").textContent=en?"العربية":"English";document.querySelectorAll("[data-ar]").forEach(el=>el.textContent=en?(ar[el.dataset.ar]||el.textContent):el.dataset.ar)});
+document.querySelectorAll(".links a,.actions a,.head h2,.cta h2").forEach(el=>{if(ar[el.textContent.trim()])el.dataset.ar=el.textContent.trim()});
+</script>
+<style>.wa{position:fixed;left:22px;bottom:22px;z-index:99;background:#25d366;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;font-size:14px;box-shadow:0 12px 30px #0008;display:flex;gap:8px;align-items:center}.wa:hover{transform:translateY(-3px)}</style>
+<script id="behance-auto-sync">(async()=>{try{const api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://rsshub.app/behance/ashrafelsa213e/projects');const r=await fetch(api,{cache:'no-store'});const j=await r.json();if(!j.items?.length)return;const grid=document.querySelector('.bh-grid');if(!grid)return;const cards=j.items.slice(0,30).map((x,i)=>{const m=x.link.match(/gallery\/(\d+)/);if(!m)return '';const t=(x.title||`Behance Project ${i+1}`).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));const u=x.link.replace(/"/g,'%22');return `<article class="bh-card"><a href="${u}" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/${m[1]}" title="${t}" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>${t}</b><span>Behance Project</span></div></article>`}).join('');if(cards)grid.innerHTML=cards}catch(e){console.log('Behance auto-sync unavailable; keeping current projects.')}})();</script>
+</body></html>'''
+
+
+path = Path("/mnt/data/index-fixed.html")
+path.write_text(html, encoding="utf-8")
+print(path)
+
+
+Analyzed
+from pathlib import Path
+
+
+# Build the corrected file directly from the user's pasted HTML, making only the needed fixes:
+# 1) remove the accidental <p> content from <head>
+# 2) make the "عني" target the actual About section
+# 3) move the About text into that section
+# 4) fix the mobile heading line spacing
+# 5) keep the rest of the supplied site structure/content intact
+source = """__USER_PASTED_HTML__"""
+print("سأجهز الملف المصحح من النص الذي أرسلته.")
+
+
+STDOUT/STDERR
+سأجهز الملف المصحح من النص الذي أرسلته.
+
+Analyzed
+from pathlib import Path
+
+
+src = Path("/mnt/data/fix/Pasted text.txt")
+html = src.read_text(encoding="utf-8")
+
+
+# Fix the broken <head>: remove the accidental visible paragraphs that were inserted
+# between meta description and <style>.
+broken = '''<meta name="description" content="أشرف السيد مصمم جرافيك بخبرة تتجاوز 8 سنوات في الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والتصميم التسويقي.">
+<p>
+مصمم جرافيك بخبرة تتجاوز 8 سنوات في مجال التصميم وصناعة المحتوى البصري.
+أساعد الشركات والأفراد على تحويل أفكارهم إلى تصاميم واضحة واحترافية تخدم أهدافهم وتترك انطباعًا قويًا.
+</p>
+
+
+<p>
+أعمل على تصميم الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والمواد التسويقية،
+مع اهتمام بالتفاصيل وجودة التنفيذ من الفكرة الأولى وحتى الملف النهائي.
+</p>.">'''
+good = '''<meta name="description" content="أشرف السيد مصمم جرافيك بخبرة تتجاوز 8 سنوات في الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والتصميم التسويقي.">'''
+html = html.replace(broken, good)
+
+
+# Make the actual About section the #about target.
+old = '<section id="design"><div class="container about"><div class="about-card"><div class="big">8+</div><p style="margin-top:8px">سنوات من تحويل الأفكار إلى تصميمات بصرية.</p><div class="stats"><div class="stat"><b>3+</b><small>مجالات تصميم</small></div><div class="stat"><b>∞</b><small>أفكار قابلة للتطوير</small></div><div class="stat"><b>1:1</b><small>اهتمام بكل مشروع</small></div></div></div><div><h2>التصميم مش مجرد شكل.</h2><p>بالنسبة لي، التصميم الجيد يبدأ بفهم المشكلة والجمهور والهدف. بعدها يأتي اللون والخط والصورة كأدوات تساعد الفكرة إنها توصل بالشكل الصح.</p><p style="margin-top:15px">هدفي إن التصميم اللي تستلمه يكون مش بس شكله احترافي، لكن يكون له وظيفة ويترك انطباعًا حقيقيًا.</p></div></div></section>'
+new = '''<section id="design"><div class="container about"><div class="about-card"><div class="big">8+</div><p style="margin-top:8px">سنوات من تحويل الأفكار إلى تصميمات بصرية.</p><div class="stats"><div class="stat"><b>3+</b><small>مجالات تصميم</small></div><div class="stat"><b>∞</b><small>أفكار قابلة للتطوير</small></div><div class="stat"><b>1:1</b><small>اهتمام بكل مشروع</small></div></div></div><div><h2>التصميم مش مجرد شكل.</h2><p>بالنسبة لي، التصميم الجيد يبدأ بفهم المشكلة والجمهور والهدف. بعدها يأتي اللون والخط والصورة كأدوات تساعد الفكرة إنها توصل بالشكل الصح.</p><p style="margin-top:15px">هدفي إن التصميم اللي تستلمه يكون مش بس شكله احترافي، لكن يكون له وظيفة ويترك انطباعًا حقيقيًا.</p></div></div></section>
+
+
+<section id="about"><div class="container about"><div class="about-card"><div class="big">8+</div><p style="margin-top:8px">سنوات من تحويل الأفكار إلى تصميمات بصرية.</p><div class="stats"><div class="stat"><b>3+</b><small>مجالات تصميم</small></div><div class="stat"><b>∞</b><small>أفكار قابلة للتطوير</small></div><div class="stat"><b>1:1</b><small>اهتمام بكل مشروع</small></div></div></div><div><h2>أنا أشرف السيد — مصمم جرافيك.</h2><p class="about-intro">مصمم جرافيك بخبرة تتجاوز 8 سنوات في مجال التصميم وصناعة المحتوى البصري. أساعد الشركات والأفراد على تحويل أفكارهم إلى تصاميم واضحة واحترافية تخدم أهدافهم وتترك انطباعًا قويًا.</p><p>أعمل على تصميم الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والمواد التسويقية، مع اهتمام بالتفاصيل وجودة التنفيذ من الفكرة الأولى وحتى الملف النهائي.</p></div></div></section>'''
+if old in html:
+    html = html.replace(old, new)
+
+
+# Ensure mobile headline has comfortable line spacing.
+html = html.replace('h1{font-size:clamp(48px,6.4vw,78px);line-height:1.08;', 'h1{font-size:clamp(48px,6.4vw,78px);line-height:1.35;')
+html = html.replace('@media(max-width:500px){.container{width:min(100% - 28px,1120px)}h1{font-size:47px}', '@media(max-width:500px){.container{width:min(100% - 28px,1120px)}h1{font-size:47px;line-height:1.45}')
+
+
+out = Path("/mnt/data/fix/index.html")
+out.write_text(html, encoding="utf-8")
+print(f"تم إنشاء الملف المصحح: {out}")
+
+
+STDOUT/STDERR
+تم إنشاء الملف المصحح: /mnt/data/fix/index.html
+
+
+تمام، عدّلت الملف نفسه وصلحت المشكلة، خصوصًا:
+
+قسم «عني» أصبح يودّي لتعريفك أنت.
+أضفت تعريف أشرف السيد بشكل احترافي ومناسب للـSEO.
+أصلحت الخطأ اللي كان موجود داخل <head>.
+ضبطت مسافات عنوان الصفحة على الموبايل.
+حافظت على باقي الموقع كما هو.
+
+ارفع الملف ده بدل index.html الحالي في GitHub:
+
+تحميل index.html المصحح
+
+بعد ما ترفعه، اعمل Commit changes، واستنى دقيقة أو دقيقتين ثم افتح الموقع. 
+
+index.html
+HTML
