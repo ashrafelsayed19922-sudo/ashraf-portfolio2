@@ -154,6 +154,37 @@ h1 span{display:inline-block;margin-top:20px}h1 span{display:inline-block;margin
 <section id="payment" class="cta" style="padding-top:55px;padding-bottom:55px"><h2 style="font-size:32px">الدفع عبر فودافون كاش</h2><p>للدفع مقابل خدمات التصميم: <strong style="color:#fff">01064363573</strong></p><button class="btn primary" id="copyCash">نسخ رقم فودافون كاش</button></section>
 </main>
 <footer><div class="container" style="display:flex;justify-content:space-between"><span>© 2026 Ashraf El Sayed</span><span>Graphic Designer</span></div></footer>
-<a class="wa" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener" aria-label="WhatsApp">☏ <span>واتساب</span></a>
-<script>const cash="01064363573";document.getElementById("payBtn")?.addEventListener("click",()=>document.getElementById("payment")?.scrollIntoView({behavior:"smooth"}));document.getElementById("copyCash")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(cash);document.getElementById("copyCash").textContent="تم نسخ الرقم ✓"}catch(e){alert(cash)}});const ar={"الخدمات":"Services","أعمالي":"Work","عني":"About","تواصل":"Contact","ابدأ مشروعك ←":"Start a project →","شاهد أعمالي":"View my work","إيه اللي بقدمه؟":"What I offer","أعمالي على Behance":"My Behance work","التصميم مش مجرد شكل.":"Design is more than looks.","عندك فكرة تستاهل تتشاف؟":"Have an idea worth seeing?"};document.getElementById("langBtn")?.addEventListener("click",()=>{const b=document.body;const en=b.dataset.en!=="1";b.dataset.en=en?"1":"0";document.documentElement.lang=en?"en":"ar";document.documentElement.dir=en?"ltr":"rtl";document.getElementById("langBtn").textContent=en?"العربية":"English";document.querySelectorAll("[data-ar]").forEach(el=>el.textContent=en?(ar[el.dataset.ar]||el.textContent):el.dataset.ar)});document.querySelectorAll(".links a,.actions a,.head h2,.cta h2").forEach(el=>{if(ar[el.textContent.trim()])el.dataset.ar=el.textContent.trim()});</script><style>.wa{position:fixed;left:22px;bottom:22px;z-index:99;background:#25d366;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;font-size:14px;box-shadow:0 12px 30px #0008;display:flex;gap:8px;align-items:center}.wa:hover{transform:translateY(-3px)}@media(max-width:500px){.wa{left:14px;bottom:14px;padding:10px 14px}}</style>
+<a class="wa" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>واتساب</span></a>
+<script>const cash="01064363573";document.getElementById("payBtn")?.addEventListener("click",()=>document.getElementById("payment")?.scrollIntoView({behavior:"smooth"}));document.getElementById("copyCash")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(cash);document.getElementById("copyCash").textContent="تم نسخ الرقم ✓"}catch(e){alert(cash)}});const ar={"الخدمات":"Services","أعمالي":"Work","عني":"About","تواصل":"Contact","ابدأ مشروعك ←":"Start a project →","شاهد أعمالي":"View my work","إيه اللي بقدمه؟":"What I offer","أعمالي على Behance":"My Behance work","التصميم مش مجرد شكل.":"Design is more than looks.","عندك فكرة تستاهل تتشاف؟":"Have an idea worth seeing?"};document.getElementById("langBtn")?.addEventListener("click",()=>{const b=document.body;const en=b.dataset.en!=="1";b.dataset.en=en?"1":"0";document.documentElement.lang=en?"en":"ar";document.documentElement.dir=en?"ltr":"rtl";document.getElementById("langBtn").textContent=en?"العربية":"English";document.querySelectorAll("[data-ar]").forEach(el=>el.textContent=en?(ar[el.dataset.ar]||el.textContent):el.dataset.ar)});document.querySelectorAll(".links a,.actions a,.head h2,.cta h2").forEach(el=>{if(ar[el.textContent.trim()])el.dataset.ar=el.textContent.trim()});</script><style>..wa{
+position:fixed;
+left:22px;
+bottom:22px;
+z-index:99;
+background:#25d366;
+color:#fff;
+padding:12px 17px;
+border-radius:999px;
+font-weight:800;
+font-size:14px;
+box-shadow:0 12px 30px #0008;
+display:flex;
+gap:8px;
+align-items:center;
+}
+
+.wa i{
+font-size:20px;
+}
+
+.wa:hover{
+transform:translateY(-3px);
+}
+
+@media(max-width:500px){
+.wa{
+left:14px;
+bottom:14px;
+padding:10px 14px;
+}
+}</style>
 <script id="behance-auto-sync">(async()=>{try{const api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://rsshub.app/behance/ashrafelsa213e/projects');const r=await fetch(api,{cache:'no-store'});const j=await r.json();if(!j.items?.length)return;const grid=document.querySelector('.bh-grid');if(!grid)return;const cards=j.items.slice(0,30).map((x,i)=>{const m=x.link.match(/gallery\/(\d+)/);if(!m)return '';const t=(x.title||`Behance Project ${i+1}`).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));const u=x.link.replace(/"/g,'%22');return `<article class="bh-card"><a href="${u}" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/${m[1]}" title="${t}" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>${t}</b><span>Behance Project</span></div></article>`}).join('');if(cards)grid.innerHTML=cards}catch(e){console.log('Behance auto-sync unavailable; keeping current projects.')}})();</script></body></html>
