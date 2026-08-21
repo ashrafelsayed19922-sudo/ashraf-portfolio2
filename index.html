@@ -93,7 +93,14 @@ align-items:start;
     padding:35px 0 60px;
     align-items:start;
 }.art{height:400px}.services,.work{grid-template-columns:1fr}.head{display:block}.head p{margin-top:10px}.about-card{max-width:500px}.stats{grid-template-columns:repeat(3,1fr)}} 
-@media(max-width:500px){
+@media(max-width:500px).art{
+  height:350px;
+}
+
+.art .portrait{
+  object-fit:cover;
+  object-position:center center;
+}{
 .container{width:min(100% - 28px,1120px);max-width:100%;overflow:hidden}
 h1{
   font-size:47px;
