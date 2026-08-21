@@ -43,6 +43,17 @@ padding:5px 0;
 white-space:nowrap;
 }
 
+.hero,
+.about{
+grid-template-columns:1fr !important;
+}
+
+.hero > div,
+.about > div{
+min-width:0;
+max-width:100%;
+}
+
 .links::-webkit-scrollbar{
 display:none;
 }
