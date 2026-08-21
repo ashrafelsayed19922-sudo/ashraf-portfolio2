@@ -87,23 +87,23 @@ h1 span{display:inline-block;margin-top:20px}h1 span{display:inline-block;margin
 #about{scroll-margin-top:90px}
 .project-strip{
   width:100%;
-  height:190px;
+  height:198px;
   overflow:hidden;
   border:1px solid var(--line);
   border-radius:20px;
-  margin-bottom:30px;
-  background:#0d0f14;
+  background:#0f1117;
+  padding:14px 0;
   position:relative;
+  display:flex;
+  align-items:center;
 }
 
 .project-track{
   display:flex;
-  align-items:center;
-  gap:14px;
   width:max-content;
-  height:100%;
-  padding:14px;
-  animation:projectMove 35s linear infinite;
+  gap:14px;
+  animation:projectMove 30s linear infinite;
+  will-change:transform;
 }
 
 .project-track img{
