@@ -2,18 +2,18 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // Count only actual page visits, not images/CSS/JS files
-    if (
-      request.method === "GET" &&
-      (url.pathname === "/" || url.pathname === "/index.html")
-    ) {
-      const current = Number(await env.KV.get("visits") || "0");
-      const visits = current + 1;
-
-      await env.KV.put("visits", String(visits));
+    // إذا كان الطلب لرابط الصفحة الرئيسية أو أي ملف آخر
+    try {
+      // يحاول تقديم الملف الثابت أولاً (مثل ashraf.jpg أو P1.jpg أو index.html)
+      const asset = await env.ASSETS.fetch(request);
+      if (asset.status !== 404) {
+        return asset;
+      }
+    } catch (e) {
+      // في حال عدم وجود الربط
     }
 
-    // Serve the portfolio normally
-    return env.ASSETS.fetch(request);
+    // إذا لم يجد الملف أو كان الرابط رئيسي يرجع index.html
+    return env.ASSETS.fetch(new URL('/index.html', request.url));
   }
 };
