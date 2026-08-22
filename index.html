@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ashraf El Sayed — Graphic Designer</title>
 <meta name="description" content="أشرف السيد مصمم جرافيك بخبرة تتجاوز 8 سنوات في الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والتصميم التسويقي.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
 :root{--bg:#08090d;--card:#101218;--line:#20232c;--muted:#9ca1ad;--text:#f7f7f9;--accent:#8b5cf6;--accent2:#c4b5fd}
@@ -20,214 +21,36 @@ nav{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:cen
 h1{font-size:clamp(48px,6.4vw,78px);line-height:1.30;letter-spacing:-2.5px;margin-bottom:25px}h1 span{color:var(--accent2)}
 .hero p{font-size:17px;line-height:2;color:var(--muted);max-width:650px;margin-bottom:30px}
 .actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 22px;border-radius:11px;border:1px solid #30333d;font-weight:700;font-size:14px;transition:.25s}.btn:hover{transform:translateY(-3px)}.primary{background:var(--accent);border-color:var(--accent);color:white}.ghost{background:#ffffff05}
+
+/* تحسين إظهار الصورة وتصميم البروفايل */
 .art{position:relative;height:470px;border:1px solid #2a2d38;border-radius:28px;overflow:hidden;background:linear-gradient(145deg,#15101f,#0d0f15);box-shadow:0 35px 90px #0009}
-.art:after{content:"";position:absolute;width:270px;height:270px;border-radius:50%;background:#8b5cf625;filter:blur(35px);top:65px;left:50px}
-.poster{position:absolute;width:275px;height:350px;right:60px;top:52px;border-radius:18px;background:linear-gradient(150deg,#bba8ff 0%,#6d4bc4 42%,#14151d 43%);transform:rotate(6deg);padding:24px;z-index:2;box-shadow:0 25px 50px #0009}.poster small{font-size:10px;color:#211934}.poster strong{display:block;font-size:34px;line-height:1.05;margin-top:125px;color:#fff}.poster em{font-style:normal;font-size:12px;color:#e8e2ff}
-.float{position:absolute;z-index:3;background:#11141b;border:1px solid #303440;border-radius:14px;padding:15px 18px;box-shadow:0 20px 45px #0009}.f1{left:30px;bottom:55px}.f2{right:25px;bottom:25px}.float b{display:block;font-size:14px}.float small{color:#9297a3;font-size:10px}
-section{padding:100px 0;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:38px}.head h2{font-size:38px}.head p{color:var(--muted);max-width:520px;font-size:14px;line-height:1.9}
+.art .portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:1;display:block}
+.art .portrait-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,transparent 40%,#08090dcc 100%);pointer-events:none}
+.art .portrait-label{position:absolute;z-index:5;left:20px;bottom:18px;background:#11141bdd;border:1px solid #303440;border-radius:12px;padding:10px 14px;font-size:12px;font-weight:800}
+.poster{position:absolute;width:220px;height:280px;right:30px;top:40px;border-radius:18px;background:linear-gradient(150deg,#bba8ff 0%,#6d4bc4 42%,#14151d 43%);transform:rotate(6deg);padding:24px;z-index:3;box-shadow:0 25px 50px #0009}.poster small{font-size:10px;color:#211934}.poster strong{display:block;font-size:28px;line-height:1.05;margin-top:80px;color:#fff}.poster em{font-style:normal;font-size:12px;color:#e8e2ff}
+.float{position:absolute;z-index:4;background:#11141b;border:1px solid #303440;border-radius:14px;padding:12px 16px;box-shadow:0 20px 45px #0009}.f1{left:20px;bottom:75px}.f2{right:20px;bottom:25px}.float b{display:block;font-size:14px}.float small{color:#9297a3;font-size:10px}
+
+section{padding:90px 0;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:38px}.head h2{font-size:38px}.head p{color:var(--muted);max-width:520px;font-size:14px;line-height:1.9}
 .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:linear-gradient(180deg,#11131a,#0d0f14);border:1px solid var(--line);padding:30px;border-radius:18px;transition:.25s}.service:hover{border-color:#4c3c76;transform:translateY(-5px)}.num{color:var(--accent2);font-weight:900;font-size:13px}.service h3{font-size:20px;margin:30px 0 10px}.service p{color:var(--muted);font-size:13px;line-height:2}
-.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{height:290px;border:1px solid var(--line);border-radius:20px;overflow:hidden;position:relative;background:#15171e}.project .visual{position:absolute;inset:0;transition:.5s}.project:hover .visual{transform:scale(1.05)}.v1{background:radial-gradient(circle at 30% 25%,#d6c9ff,transparent 20%),linear-gradient(135deg,#2b174f,#8b5cf6 48%,#171923)}.v2{background:radial-gradient(circle at 70% 25%,#ffd9a8,transparent 18%),linear-gradient(135deg,#17323b,#b97848 55%,#15171d)}.v3{background:radial-gradient(circle at 35% 30%,#ffb3cc,transparent 20%),linear-gradient(135deg,#4a152d,#e66a9b 55%,#16151b)}.project .caption{position:absolute;inset:auto 0 0;padding:45px 20px 20px;background:linear-gradient(transparent,#08090df2)}.caption b{font-size:17px}.caption small{display:block;color:#b3b7c2;margin-top:3px}
+
 .about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.about-card{border:1px solid var(--line);border-radius:24px;padding:35px;background:linear-gradient(145deg,#171321,#0d0f14)}.about-card .big{font-size:75px;font-weight:900;color:var(--accent);line-height:1}.about h2{font-size:40px;margin-bottom:16px}.about p{color:var(--muted);line-height:2;font-size:15px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.stat{border:1px solid var(--line);padding:17px;border-radius:14px}.stat b{font-size:24px}.stat small{display:block;color:#888e9a;font-size:11px}
-.cta{text-align:center;padding:110px 20px}.cta h2{font-size:clamp(35px,5vw,58px);line-height:1.2}.cta p{color:var(--muted);margin:15px auto 28px;max-width:600px}
+.cta{text-align:center;padding:90px 20px}.cta h2{font-size:clamp(35px,5vw,58px);line-height:1.2}.cta p{color:var(--muted);margin:15px auto 28px;max-width:600px}
 footer{border-top:1px solid var(--line);padding:25px 0;color:#777d88;font-size:12px;display:flex;justify-content:space-between}
-@media(max-width:850px){
-.links{
-display:flex;
-gap:14px;
-align-items:center;
-justify-content:center;
-width:auto;
-max-width:100%;
-font-size:11px;
-padding:5px 0;
-white-space:nowrap;
-}
 
-.hero,
-.about{
-grid-template-columns:1fr !important;
-}
+.lang{background:none;border:1px solid var(--line);color:#b9bdc7;padding:6px 10px;border-radius:8px;cursor:pointer;font-family:inherit}.socials{display:flex;gap:9px;align-items:center}.socials a{width:34px;height:34px;border:1px solid var(--line);border-radius:10px;display:grid;place-items:center;color:#b9bdc7;transition:.2s}.socials a:hover{color:#fff;border-color:#51406f;transform:translateY(-2px)}.socials svg{width:17px;height:17px;fill:currentColor}.pay{cursor:pointer;background:none;border:none;font-size:18px}.bh-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.bh-card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#0f1117;transition:.25s}.bh-card:hover{transform:translateY(-5px);border-color:#51406f}.bh-frame{height:285px;display:block;position:relative;background:#15171e;overflow:hidden}.bh-frame iframe{width:100%;height:100%;border:0;display:block;pointer-events:none}.bh-overlay{position:absolute;right:14px;bottom:14px;background:#8b5cf6;color:#fff;padding:7px 12px;border-radius:9px;font-size:11px;font-weight:800;opacity:0;transition:.2s}.bh-card:hover .bh-overlay{opacity:1}.bh-info{padding:16px 18px 18px}.bh-info b{display:block;font-size:14px}.bh-info span{display:block;color:#858b98;font-size:11px;margin-top:4px}
 
-.hero > div,
-.about > div{
-min-width:0;
-max-width:100%;
-}
+.project-strip{width:100%;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:#0f1117;padding:14px 0;position:relative;margin-bottom:20px}.project-track{display:flex;width:max-content;gap:14px;animation:projectMove 35s linear infinite}.project-track img{width:220px;height:140px;object-fit:cover;border-radius:12px;border:1px solid #2a2d38;flex-shrink:0}
+@keyframes projectMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-.links::-webkit-scrollbar{
-display:none;
-}
+.wa{position:fixed;left:22px;bottom:22px;z-index:9999;background:#25d366;color:#fff;padding:12px 17px;border-radius:999px;font-weight:800;font-size:14px;box-shadow:0 12px 30px #0008;display:flex;gap:8px;align-items:center;text-decoration:none}.wa:hover{transform:translateY(-3px)}
 
-nav{
-height:auto;
-min-height:110px;
-padding:10px 0;
-display:flex;
-flex-direction:column;
-gap:8px;
-}
-
-.logo{
-order:1;
-}
-
-.links{
-order:2;
-}
-
-.socials{
-order:3;
-}
-.links::-webkit-scrollbar{display:none}
-
-.hero,.about{
-grid-template-columns:1fr;
-}
-
-.hero{
-min-height:auto;
-padding:35px 0 60px;
-align-items:start;
-}
-    min-height:auto;
-    padding:35px 0 60px;
-    align-items:start;
-}.art{height:400px}.services,.work{grid-template-columns:1fr}.head{display:block}.head p{margin-top:10px}.about-card{max-width:500px}.stats{grid-template-columns:repeat(3,1fr)}} 
-@media(max-width:500px){
-.container{width:min(100% - 28px,1120px);max-width:100%;overflow:hidden}
-h1{
-  font-size:47px;
-  line-height:1.35;
-  letter-spacing:-1.5px;
-  max-width:100%;
-  overflow-wrap:break-word;
-}h1 span{display:inline-block;margin-top:20px}h1 span{display:inline-block;margin-top:20px}h1 span{display:inline-block;margin-top:14px}.art{height:350px}.poster{width:220px;height:285px;right:35px;top:40px}.poster strong{font-size:27px;margin-top:100px}.f1{left:15px}.f2{right:12px}.stats{gap:6px}.stat{padding:12px}.stat b{font-size:20px}}
-#about{scroll-margin-top:90px}
-.project-strip{
-  width:100%;
-  overflow:hidden;
-  border:1px solid var(--line);
-  border-radius:20px;
-  background:#0f1117;
-  padding:14px 0;
-  position:relative;
-}
-
-.project-track{
-  display:flex;
-  width:max-content;
-  gap:14px;
-  animation:projectMove 30s linear infinite;
-  will-change:transform;
-}
-
-.project-track img{
-  width:250px;
-  height:160px;
-  object-fit:cover;
-  border-radius:12px;
-  border:1px solid #2a2d38;
-  flex-shrink:0;
-}
-
-@keyframes projectMove{
-  from{
-    transform:translateX(0);
-  }
-  to{
-    transform:translateX(-50%);
-  }
-}
-
-.project-track{
-  animation:projectMove 45s linear infinite;
-  width:max-content;
-}
-@media(max-width:500px){
-  .project-strip{
-    height:135px;
-    border-radius:16px;
-    margin-bottom:25px;
-  }
-
-  .project-track{
-    gap:10px;
-    padding:10px;
-    animation-duration:28s;
-  }
-
-  .project-track img{
-    width:180px;
-    height:115px;
-    border-radius:10px;
-  }
-}</style>
-<style>.lang{background:none;border:1px solid var(--line);color:#b9bdc7;padding:6px 10px;border-radius:8px;cursor:pointer;font-family:inherit}.socials{display:flex;gap:9px;align-items:center}.socials a{width:34px;height:34px;border:1px solid var(--line);border-radius:10px;display:grid;place-items:center;color:#b9bdc7;transition:.2s}.socials a:hover{color:#fff;border-color:#51406f;transform:translateY(-2px)}.socials svg{width:17px;height:17px;fill:currentColor}.pay{cursor:pointer}.bh-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.bh-card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#0f1117;transition:.25s}.bh-card:hover{transform:translateY(-5px);border-color:#51406f}.bh-frame{height:285px;display:block;position:relative;background:#15171e;overflow:hidden}.bh-frame iframe{width:100%;height:100%;border:0;display:block;pointer-events:none}.bh-overlay{position:absolute;right:14px;bottom:14px;background:#8b5cf6;color:#fff;padding:7px 12px;border-radius:9px;font-size:11px;font-weight:800;opacity:0;transition:.2s}.bh-card:hover .bh-overlay{opacity:1}.bh-info{padding:16px 18px 18px}.bh-info b{display:block;font-size:14px}.bh-info span{display:block;color:#858b98;font-size:11px;margin-top:4px}@media(max-width:850px){.bh-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.bh-grid{grid-template-columns:1fr}.bh-frame{height:310px}}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><style id="final-updates">.socials a{font-size:0}.socials a i{font-size:16px}.art .portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:10;display:block;visibility:visible;opacity:1}.art .portrait-overlay{position:absolute;inset:0;z-index:3;background:linear-gradient(180deg,transparent 45%,#08090dcc 100%);pointer-events:none}.art .portrait-label{position:absolute;z-index:5;left:20px;bottom:18px;background:#11141bdd;border:1px solid #303440;border-radius:12px;padding:10px 14px;font-size:12px;font-weight:800}.art .poster{display:none}.art:after{z-index:4;pointer-events:none;opacity:.18}.about-intro{font-size:15px;line-height:2;color:var(--muted);margin-bottom:15px}.auto-note{color:#858b98;font-size:11px;margin-top:8px}@media(max-width:500px){.art .portrait{object-position:center top}.art .portrait-label{left:12px;bottom:12px}} </style><style>
-/* إصلاح مربع صور المشاريع على الموبايل */
-.projects-strip {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.projects-strip .projects-track {
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.projects-strip img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-sizing: border-box;
-}
-
-/* منع الصفحة من التمدد يمين وشمال */
-html,
-body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* زر واتساب */
-.wa {
-    position: fixed;
-    left: 22px;
-    bottom: 22px;
-    z-index: 9999;
-    background: #25d366;
-    color: #fff;
-    padding: 12px 17px;
-    border-radius: 999px;
-    font-weight: 800;
-    font-size: 14px;
-    box-shadow: 0 12px 30px #0008;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    text-decoration: none;
-}
-
-.wa:hover {
-    transform: translateY(-3px);
-}
-
-@media(max-width:500px) {
-    .wa {
-        left: 14px;
-        bottom: 14px;
-        padding: 10px 14px;
-    }
-}
-</style></head>
+@media(max-width:850px){.bh-grid{grid-template-columns:repeat(2,1fr)}.hero,.about{grid-template-columns:1fr}.hero{min-height:auto;padding:35px 0 60px}.art{height:400px}.services{grid-template-columns:1fr}.head{display:block}.head p{margin-top:10px}}
+@media(max-width:560px){.bh-grid{grid-template-columns:1fr}.bh-frame{height:310px}.wa{left:14px;bottom:14px;padding:10px 14px}}
+</style>
+</head>
 <body>
 <header><div class="container"><nav><div class="socials" aria-label="Social links"><a href="https://www.facebook.com/ashraf.elsayed.388631" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/in/ashraf-elsayed-8b27a323a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://instagram.com/ashrafelsayed232" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.pinterest.com/ashrafelsayed19922/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a><a href="mailto:ashrafelsayed19922@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a><button class="pay" id="payBtn" aria-label="Vodafone Cash">💳</button></div><a class="logo" href="#">Ashraf El Sayed<span><i>.</i></span></a><div class="links"><a href="#services">الخدمات</a><a href="#work">أعمالي</a><a href="#my-about">عني</a><a href="#contact">تواصل</a><a href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener">Behance ↗</a><button class="lang" id="langBtn">English</button></div></nav></div></header>
+
 <main>
 <div class="container">
 <section class="hero" style="border:0">
@@ -239,7 +62,6 @@ body {
     <img src="P3.jpg" alt="Graphic Design Project">
     <img src="P4.jpg" alt="Graphic Design Project">
     <img src="P5.jpg" alt="Graphic Design Project">
-
     <img src="P1.jpg" alt="Graphic Design Project">
     <img src="P2.jpg" alt="Graphic Design Project">
     <img src="P3.jpg" alt="Graphic Design Project">
@@ -252,7 +74,16 @@ body {
 <p>مصمم جرافيك متخصص في تحويل الأفكار إلى تصاميم واضحة، جذابة، ومبنية على هدف حقيقي — من الهوية البصرية والسوشيال ميديا إلى المطبوعات والمواد التسويقية.</p>
 <div class="actions"><a class="btn primary" href="#contact">ابدأ مشروعك ←</a><a class="btn ghost" href="#work">شاهد أعمالي</a></div>
 </div>
-<div class="art"><img class="portrait" src="ashraf.jpg" alt="أشرف السيد - مصمم جرافيك"><div class="portrait-overlay"></div><div class="portrait-label">Ashraf El Sayed · Graphic Designer</div><div class="poster"><small>ASHRAF EL SAYED / DESIGN</small><strong>MAKE<br>IT<br>MEMORABLE.</strong><em>Visual identity · 2026</em></div><div class="float f1"><b>8+ Years</b><small>Design experience</small></div><div class="float f2"><b>Ideas → Visuals</b><small>Design with purpose</small></div></div></div>
+
+<div class="art">
+  <img class="portrait" src="ashraf.jpg" alt="أشرف السيد - مصمم جرافيك">
+  <div class="portrait-overlay"></div>
+  <div class="portrait-label">Ashraf El Sayed · Graphic Designer</div>
+  <div class="poster"><small>ASHRAF EL SAYED / DESIGN</small><strong>MAKE<br>IT<br>MEMORABLE.</strong><em>Visual identity · 2026</em></div>
+  <div class="float f1"><b>8+ Years</b><small>Design experience</small></div>
+  <div class="float f2"><b>Ideas → Visuals</b><small>Design with purpose</small></div>
+</div>
+</section>
 
 <section id="services"><div class="container"><div class="head"><h2>إيه اللي بقدمه؟</h2><p>من أول الفكرة لحد الملف النهائي — كل تفصيلة في التصميم لها سبب وهدف.</p></div><div class="services">
 <article class="service"><span class="num">01 / BRANDING</span><h3>الهوية البصرية</h3><p>هوية متكاملة تساعد البراند يظهر بشخصية واضحة ومميزة وقابلة للتذكر.</p></article>
@@ -260,9 +91,7 @@ body {
 <article class="service"><span class="num">03 / PRINT</span><h3>المطبوعات والتسويق</h3><p>أغلفة، شهادات، بروشورات، بنرات ومواد تسويقية جاهزة للطباعة والنشر.</p></article>
 </div></div></section>
 
-<section id="work"><div class="container"><div class="head"><h2>أعمالي على Behance</h2><p>كل مشاريعي من Behance في مكان واحد. اضغط على أي مشروع لمشاهدته بالتفصيل.</p></div><div class="bh-grid"><article class="bh-card"><a href="https://www.behance.net/gallery/253623405/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/253623405" title="Graphic Design Project 01" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 01</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/252509447/-2027" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/252509447" title="2027 Design Project" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>2027 Design Project</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/253146017/Print-Design-for-Water-Company" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/253146017" title="Print Design for Water Company" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Print Design for Water Company</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/252932691/Large-Format-Sticker-Design" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/252932691" title="Large Format Sticker Design" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Large Format Sticker Design</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/252653043/Coffee-Brand-Identity" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/252653043" title="Coffee Brand Identity" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Coffee Brand Identity</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/252070315/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/252070315" title="Graphic Design Project 06" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 06</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/251540863/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/251540863" title="Graphic Design Project 07" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 07</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/252646567/Sharqia-Water-Company" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/252646567" title="Sharqia Water Company" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Sharqia Water Company</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/251040109/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/251040109" title="Graphic Design Project 09" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 09</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250680923/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250680923" title="Graphic Design Project 10" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 10</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250746511/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250746511" title="Graphic Design Project 11" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 11</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250631935/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250631935" title="Graphic Design Project 12" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 12</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250550599/-fish-54" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250550599" title="Fish 54" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Fish 54</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250514851/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250514851" title="Graphic Design Project 14" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 14</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250322001/Drinks-Sota-Motion-Advertising-for-Fresh-Juices" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250322001" title="Drinks Sota — Motion Advertising" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Drinks Sota — Motion Advertising</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250300547/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250300547" title="Graphic Design Project 16" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 16</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/249836547/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/249836547" title="Graphic Design Project 17" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 17</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/249512169/-()" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/249512169" title="Graphic Design Project 18" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 18</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/249511755/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/249511755" title="Graphic Design Project 19" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 19</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/249511807/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/249511807" title="Graphic Design Project 20" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 20</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/223339891/roll-up" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/223339891" title="Roll Up Design" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Roll Up Design</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/223339823/business-card" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/223339823" title="Business Card Design" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Business Card Design</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/249511573/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/249511573" title="Graphic Design Project 23" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 23</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/223339657/menu" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/223339657" title="Menu Design" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Menu Design</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/223339559/design-banner" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/223339559" title="Banner Design" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Banner Design</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/223339431/design-sticker" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/223339431" title="Sticker Design" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Sticker Design</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/223339349/design-banner" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/223339349" title="Banner Design" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Banner Design</b><span>Behance Project</span></div></article></div><div style="text-align:center;margin-top:35px"><a class="btn primary" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener">شاهد كل أعمالي على Behance ↗</a></div></div></section>
-
-<section id="design"><div class="container about"><div class="about-card"><div class="big">8+</div><p style="margin-top:8px">سنوات من تحويل الأفكار إلى تصميمات بصرية.</p><div class="stats"><div class="stat"><b>3+</b><small>مجالات تصميم</small></div><div class="stat"><b>∞</b><small>أفكار قابلة للتطوير</small></div><div class="stat"><b>1:1</b><small>اهتمام بكل مشروع</small></div></div></div><div><h2>التصميم مش مجرد شكل.</h2><p>بالنسبة لي، التصميم الجيد يبدأ بفهم المشكلة والجمهور والهدف. بعدها يأتي اللون والخط والصورة كأدوات تساعد الفكرة إنها توصل بالشكل الصح.</p><p style="margin-top:15px">هدفي إن التصميم اللي تستلمه يكون مش بس شكله احترافي، لكن يكون له وظيفة ويترك انطباعًا حقيقيًا.</p></div></div></section>
+<section id="work"><div class="container"><div class="head"><h2>أعمالي على Behance</h2><p>كل مشاريعي من Behance في مكان واحد. اضغط على أي مشروع لمشاهدته بالتفصيل.</p></div><div class="bh-grid"><article class="bh-card"><a href="https://www.behance.net/gallery/253623405/_" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/253623405" title="Graphic Design Project 01" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Graphic Design Project 01</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/252509447/-2027" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/252509447" title="2027 Design Project" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>2027 Design Project</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/253146017/Print-Design-for-Water-Company" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/253146017" title="Print Design for Water Company" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Print Design for Water Company</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/252653043/Coffee-Brand-Identity" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/252653043" title="Coffee Brand Identity" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Coffee Brand Identity</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250550599/-fish-54" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250550599" title="Fish 54" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Fish 54</b><span>Behance Project</span></div></article><article class="bh-card"><a href="https://www.behance.net/gallery/250322001/Drinks-Sota-Motion-Advertising-for-Fresh-Juices" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/250322001" title="Drinks Sota — Motion Advertising" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>Drinks Sota — Motion Advertising</b><span>Behance Project</span></div></article></div><div style="text-align:center;margin-top:35px"><a class="btn primary" href="https://www.behance.net/ashrafelsa213e" target="_blank" rel="noopener">شاهد كل أعمالي على Behance ↗</a></div></div></section>
 
 <section id="my-about"><div class="container about">
 <div class="about-card">
@@ -276,69 +105,29 @@ body {
 </div>
 <div>
 <h2>أنا أشرف السيد — مصمم جرافيك.</h2>
-<p class="about-intro">مصمم جرافيك بخبرة تتجاوز 8 سنوات في مجال التصميم وصناعة المحتوى البصري. أساعد الشركات والأفراد على تحويل أفكارهم إلى تصاميم واضحة واحترافية تخدم أهدافهم وتترك انطباعًا قويًا.</p>
-<p>أعمل على تصميم الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والمواد التسويقية، مع اهتمام بالتفاصيل وجودة التنفيذ من الفكرة الأولى وحتى الملف النهائي.</p>
+<p style="font-size:15px;line-height:2;color:var(--muted);margin-bottom:15px">مصمم جرافيك بخبرة تتجاوز 8 سنوات في مجال التصميم وصناعة المحتوى البصري. أساعد الشركات والأفراد على تحويل أفكارهم إلى تصاميم واضحة واحترافية تخدم أهدافهم وتترك انطباعًا قويًا.</p>
+<p style="font-size:15px;line-height:2;color:var(--muted)">أعمل على تصميم الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والمواد التسويقية، مع اهتمام بالتفاصيل وجودة التنفيذ من الفكرة الأولى وحتى الملف النهائي.</p>
 </div>
 </div></section>
 
-<section id="contact" class="cta"><h2>عندك فكرة تستاهل تتشاف؟</h2><p>احكيلي عنها، ونحوّلها مع بعض لتصميم يخلي الناس توقف وتنتبه.</p><a class="btn primary" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener"><section id="about">
-  <div class="container about">
-    <div class="about-card">
-      <div class="big">8+</div>
-      <p style="margin-top:8px">سنوات من الخبرة في التصميم وصناعة المحتوى البصري.</p>
-    </div>
+<section id="contact" class="cta">
+<h2>عندك فكرة تستاهل تتشاف؟</h2>
+<p>احكيلي عنها، ونحوّلها مع بعض لتصميم يخلي الناس توقف وتنتبه.</p>
+<a class="btn primary" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener">تواصل معي على واتساب ←</a>
+</section>
 
-    <div>
-      <h2>أنا أشرف السيد — Graphic Designer</h2>
-
-      <p>
-        مصمم جرافيك بخبرة تتجاوز 8 سنوات في مجال التصميم وصناعة المحتوى البصري.
-        أساعد الشركات والأفراد على تحويل أفكارهم إلى تصاميم واضحة واحترافية تخدم أهدافهم وتترك انطباعًا قويًا.
-      </p>
-
-      <p style="margin-top:15px">
-        أعمل على تصميم الهوية البصرية، السوشيال ميديا، الإعلانات، المطبوعات والمواد التسويقية،
-        مع اهتمام بالتفاصيل وجودة التنفيذ من الفكرة الأولى وحتى الملف النهائي.
-      </p>
-    </div>
-  </div>
-</section>تواصل معي على واتساب ←</a></section>
-<section id="payment" class="cta" style="padding-top:55px;padding-bottom:55px"><h2 style="font-size:32px">الدفع عبر فودافون كاش</h2><p>للدفع مقابل خدمات التصميم: <strong style="color:#fff">01064363573</strong></p><button class="btn primary" id="copyCash">نسخ رقم فودافون كاش</button></section>
+<section id="payment" class="cta" style="padding-top:55px;padding-bottom:55px"><h2 style="font-size:32px">الدفع عبر فودافون كاش</h2><p style="margin:10px 0">للدفع مقابل خدمات التصميم: <strong style="color:#fff">01064363573</strong></p><button class="btn primary" id="copyCash">نسخ رقم فودافون كاش</button></section>
+</div>
 </main>
+
 <footer><div class="container" style="display:flex;justify-content:space-between"><span>© 2026 Ashraf El Sayed</span><span>Graphic Designer</span></div></footer>
+
 <a class="wa" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>واتساب</span></a>
-<script>const cash="01064363573";document.getElementById("payBtn")?.addEventListener("click",()=>document.getElementById("payment")?.scrollIntoView({behavior:"smooth"}));document.getElementById("copyCash")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(cash);document.getElementById("copyCash").textContent="تم نسخ الرقم ✓"}catch(e){alert(cash)}});const ar={"الخدمات":"Services","أعمالي":"Work","عني":"About","تواصل":"Contact","ابدأ مشروعك ←":"Start a project →","شاهد أعمالي":"View my work","إيه اللي بقدمه؟":"What I offer","أعمالي على Behance":"My Behance work","التصميم مش مجرد شكل.":"Design is more than looks.","عندك فكرة تستاهل تتشاف؟":"Have an idea worth seeing?"};document.getElementById("langBtn")?.addEventListener("click",()=>{const b=document.body;const en=b.dataset.en!=="1";b.dataset.en=en?"1":"0";document.documentElement.lang=en?"en":"ar";document.documentElement.dir=en?"ltr":"rtl";document.getElementById("langBtn").textContent=en?"العربية":"English";document.querySelectorAll("[data-ar]").forEach(el=>el.textContent=en?(ar[el.dataset.ar]||el.textContent):el.dataset.ar)});document.querySelectorAll(".links a,.actions a,.head h2,.cta h2").forEach(el=>{if(ar[el.textContent.trim()])el.dataset.ar=el.textContent.trim()});</script><style>..wa{
-position:fixed;
-left:22px;
-bottom:22px;
-z-index:99;
-background:#25d366;
-color:#fff;
-padding:12px 17px;
-border-radius:999px;
-font-weight:800;
-font-size:14px;
-box-shadow:0 12px 30px #0008;
-display:flex;
-gap:8px;
-align-items:center;
-}
 
-.wa i{
-font-size:20px;
-}
-
-.wa:hover{
-transform:translateY(-3px);
-}
-
-@media(max-width:500px){
-.wa{
-left:14px;
-bottom:14px;
-padding:10px 14px;
-}
-}</style>
-<script id="behance-auto-sync">(async()=>{try{const api='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://rsshub.app/behance/ashrafelsa213e/projects');const r=await fetch(api,{cache:'no-store'});const j=await r.json();if(!j.items?.length)return;const grid=document.querySelector('.bh-grid');if(!grid)return;const cards=j.items.slice(0,30).map((x,i)=>{const m=x.link.match(/gallery\/(\d+)/);if(!m)return '';const t=(x.title||`Behance Project ${i+1}`).replace(/[<>&"]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));const u=x.link.replace(/"/g,'%22');return `<article class="bh-card"><a href="${u}" target="_blank" rel="noopener" class="bh-frame"><iframe loading="lazy" src="https://www.behance.net/embed/project/${m[1]}" title="${t}" scrolling="no"></iframe><div class="bh-overlay">View Project ↗</div></a><div class="bh-info"><b>${t}</b><span>Behance Project</span></div></article>`}).join('');if(cards)grid.innerHTML=cards}catch(e){console.log('Behance auto-sync unavailable; keeping current projects.')}})();</script><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f47498cadc7d43a89b7071c0fb29bc81"}'></script><!-- End Cloudflare Web Analytics --><a class="wa" href="https://wa.me/201223155822?text=مرحبًا%20أشرف،%20أريد%20الاستفسار%20عن%20خدمة%20تصميم." target="_blank" rel="noopener" aria-label="WhatsApp">
-☏ <span>واتساب</span>
-</a></body></html>
+<script>
+const cash="01064363573";
+document.getElementById("payBtn")?.addEventListener("click",()=>document.getElementById("payment")?.scrollIntoView({behavior:"smooth"}));
+document.getElementById("copyCash")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(cash);document.getElementById("copyCash").textContent="تم نسخ الرقم ✓"}catch(e){alert(cash)}});
+</script>
+</body>
+</html>
